@@ -1,7 +1,7 @@
 <?php
 include('db.php'); 
 
-for ($i = 1; $i <= 100000; $i++) {
+for ($i = 1; $i <= 5000010; $i++) {
     $email = "user$i@test.tt";
     $username = "user$i";
     $randValidtsDate = rand(1, 10);
