@@ -16,8 +16,8 @@ include("classes/Main.php");
     <h2>TOP-3 countries:</h2>
     <ul id="topCountries"></ul>
 
-    <p>Max power: <span id="maxPowerHP"></span> л.с. (<span id="maxPowerKW"></span> кВт)</p>
-    <p>Min power: <span id="minPowerHP"></span> л.с. (<span id="minPowerKW"></span> кВт)</p>
+    <p>Max power: <span id="maxPowerHP"></span> hp (<span id="maxPowerKW"></span> kW)</p>
+    <p>Min power: <span id="minPowerHP"></span> hp (<span id="minPowerKW"></span> kW)</p>
 
     <h2>Gearboxes:</h2>
     <ul id="gearboxOptions"></ul>
@@ -36,7 +36,7 @@ include("classes/Main.php");
                     topCountriesList.innerHTML = '';
                     data.top_countries.forEach(country => {
                         const listItem = document.createElement('li');
-                        listItem.textContent = `${country.country_of_origin}: ${country.car_count} автомобилей`;
+                        listItem.textContent = `${country.country_of_origin}: ${country.car_count} cars`;
                         topCountriesList.appendChild(listItem);
                     });
 
